@@ -6,60 +6,100 @@
     <meta name="keywords" content="sale online, payment online, chat online, delivery">
     
     <title>Basics of html</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
     
 </head>
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="/" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="nav-profile.html" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="nav-contact.html" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+  </div>
 
 <h1 style="color: #0100FD; background-color: green; font-size: 44px; padding: 20px;">Basics of html</h1>
 
 <!-- Carousel -->
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="nike-baseball.jpeg" alt="First slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="nike-baseball.jpeg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="nike-baseball.jpeg" alt="Third slide">
-        </div>
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="/nike-baseball.jpeg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/nike-baseball.jpeg"" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="/nike-baseball.jpeg"" alt="Third slide">
+      </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
     </a>
     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
     </a>
-</div>
+  </div>
 <!-- Carousel -->
-<div class="form-control">
+<div class="row form-control">
+    <div class="row-md-3">
 
-    <table class="fluid" style="border: 1px solid black;">
-        <thead style="background-color: blue; color: white;">
-            <th>No</th>
-            <th>Name</th>
-            <th>Amount</th>
-            <th>Skills</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Kiggundu Brevin</td>
-                <td>Shs. 200</td>
-                <td>Computer</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Musisi Jonnathan</td>
-                <td>Shs. 100,000</td>
-                <td>Engineer</td>
-            </tr>
-        </tbody>
-    </table>
+        <table class="table table-striped" style="border: 1px solid black;">
+            <thead style="background-color: blue; color: white;">
+                <th>No</th>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Skills</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Kiggundu Brevin</td>
+                    <td>Shs. 200</td>
+                    <td>Computer</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Musisi Jonnathan</td>
+                    <td>Shs. 100,000</td>
+                    <td>Engineer</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row-md-3">
+
+        <table class="table table-striped" style="border: 1px solid black;">
+            <thead style="background-color: blue; color: white;">
+                <th>No</th>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Skills</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Kiggundu Brevin</td>
+                    <td>Shs. 200</td>
+                    <td>Computer</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Musisi Jonnathan</td>
+                    <td>Shs. 100,000</td>
+                    <td>Engineer</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </div>
 
 
@@ -97,7 +137,7 @@
     </section>
 
     <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
+        <img class="card-img-top" src="./nike-baseball.jpeg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -108,6 +148,8 @@
 
       <!-- JS BOOSTRAPS -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <script src="bootstrap.min.js"></script>
 <script src="bootstrap.pooper.min.js"></script>
